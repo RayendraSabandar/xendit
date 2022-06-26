@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-let source = fs.readFileSync('source.csv', 'utf-8')
+let source = fs.readFileSync('input/source.csv', 'utf-8')
 
 source = source.split('\n')
 source = source.slice(1)

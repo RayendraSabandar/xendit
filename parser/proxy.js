@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-let proxy = fs.readFileSync('proxy.csv', 'utf-8')
+let proxy = fs.readFileSync('input/proxy.csv', 'utf-8')
 
 proxy = proxy.split('\n')
 proxy = proxy.slice(1)
