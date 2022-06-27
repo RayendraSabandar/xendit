@@ -5,7 +5,8 @@ const source = require('../parser/source')
 const proxy = require('../parser/proxy')
 const checkToDelete = require('../helpers/checkToDelete')
 const checkToPush = require('../helpers/checkToPush')
-const writeFile = require('../helpers/writeFile')
+const writeCSVReport = require('../helpers/writeCSVReport')
+const writeTextReport = require('../helpers/writeTextReport')
 
 const sourceIDs = source.map(el => {
     return el.id
@@ -20,4 +21,5 @@ const pushedValidRecords = checkToPush(source, proxyIDs)
 
 const validProxyRecords = [...deletedInvalidRecords, ...pushedValidRecords]
 
-writeFile(validProxyRecords)
+writeCSVReport(validProxyRecords)
+writeTextReport(validProxyRecords, source.length, proxy.length)
