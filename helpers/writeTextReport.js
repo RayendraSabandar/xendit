@@ -1,9 +1,9 @@
 const fs = require('fs')
 
-function writeTextReport(validProxyRecords, sourceLength, proxyLength) {
+function writeTextReport(validProxyRecords, totalRecordsProcessed) {
     let header = 'Summary report\r\n'
     let dateRange = ''
-    const recordsProcessed = `Number of records processed: ${sourceLength + proxyLength}\r\n`
+    const recordsProcessed = `Number of records processed: ${totalRecordsProcessed}\r\n`
     let totalDeletedRecords = 0
     let totalAddedRecords = 0
 

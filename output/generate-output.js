@@ -20,6 +20,7 @@ const deletedInvalidRecords = checkToDelete(proxy, sourceIDs)
 const pushedValidRecords = checkToPush(source, proxyIDs)
 
 const validProxyRecords = [...deletedInvalidRecords, ...pushedValidRecords]
+const totalRecordsProcessed = source.length + proxy.length
 
 writeCSVReport(validProxyRecords)
-writeTextReport(validProxyRecords, source.length, proxy.length)
+writeTextReport(validProxyRecords, totalRecordsProcessed)
