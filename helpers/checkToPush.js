@@ -5,6 +5,7 @@ function checkToPush(source, proxyIDs){
         const isPresent = proxyIDs.includes(eachSourceRecord.id)
         
         if(!isPresent) {
+            eachSourceRecord.remarks = 'Record added; not present in proxy'
             result.push(eachSourceRecord)
         }
     }

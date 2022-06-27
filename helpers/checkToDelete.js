@@ -6,6 +6,9 @@ function checkToDelete(proxy, sourceIDs){
         
         if(isPresent) {
             result.push(eachProxyRecord)
+        } else {
+            eachProxyRecord.remarks = 'Record deleted; not present in source'
+            result.push(eachProxyRecord)
         }
     }
 
