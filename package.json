@@ -1,0 +1,21 @@
+{
+  "name": "xendit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-output": "node output/generate-output.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RayendraSabandar/xendit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RayendraSabandar/xendit/issues"
+  },
+  "homepage": "https://github.com/RayendraSabandar/xendit#readme"
+}
